@@ -1,0 +1,22 @@
+<nav>
+  <div class="movie-item-style-2 movie-item-style-1">
+    <img src="assets/images/uploads/mv1.jpg" alt="" />
+    <div class="hvr-inner">
+      <a (click)="ngClick()">
+        Show more <i class="ion-android-arrow-dropright"></i>
+      </a>
+    </div>
+    <div class="mv-item-infor">
+      <h6>
+        <a (click)="ngClick()">{{ movie.title }}</a>
+      </h6>
+      <span>
+        {{
+          movie.opening_crawl.length > 128
+            ? (movie.opening_crawl | slice: 0:128) + "..."
+            : movie.opening_crawl
+        }}
+      </span>
+    </div>
+  </div>
+</nav>

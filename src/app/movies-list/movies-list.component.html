@@ -1,0 +1,24 @@
+<div class="buster-light">
+  <div class="hero common-hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="hero-ct">
+            <h1>Movies</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-single">
+    <div class="container">
+      <div class="row">
+        <app-movie-card
+          *ngFor="let movie of movies"
+          [movie] = movie
+          class="col-lg-2 col-md-3 col-sm-4 col-6"
+        ></app-movie-card>
+      </div>
+    </div>
+  </div>
+</div>

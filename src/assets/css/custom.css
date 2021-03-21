@@ -1,0 +1,36 @@
+/* Navbar */
+.navbar-nav > li > a {
+  color: #fff;
+}
+
+footer {
+  background: #999;
+  background-image: none;
+}
+
+.navbar-nav > li > a:hover {
+  color: #f76200;
+}
+
+.common-hero {
+  height: 200px;
+  background: url(../images/Inception-1.jpeg) no-repeat;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero .hero-ct {
+  padding-top: 60px;
+}
+
+.movie-single {
+  margin-top: 0;
+}
+
+.bd-hd,
+.movie-single .movie-single-ct .movie-rate .rate p span {
+  color: #444;
+}
+
+a {
+  cursor: pointer;
+}

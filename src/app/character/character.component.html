@@ -1,0 +1,90 @@
+<div class="buster-light">
+  <div class="hero common-hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="hero-ct">
+            <h1>Character Detail</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-single movie-single cebleb-single">
+    <div class="container">
+      <div class="row ipad-width">
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <div class="mv-ceb">
+            <img src="assets/images/uploads/cebsingle2.png" alt="" />
+          </div>
+        </div>
+        <div class="col-md-8 col-sm-12 col-xs-12">
+          <div class="movie-single-ct">
+            <h1 class="bd-hd">{{ character.name }}</h1>
+            <div class="movie-tabs">
+              <div class="tabs">
+                <div class="tab-content">
+                  <div id="overviewceb" class="tab active">
+                    <div class="row">
+                      <div class="col-md-8 col-sm-12 col-xs-12">
+                        <div class="title-hd-sm">
+                          <h4>filmography</h4>
+                        </div>
+                        <!-- movie cast -->
+                        <div class="mvcast-item" *ngIf="movies">
+                          <div class="cast-it" *ngFor="let movie of movies">
+                            <div class="cast-left cebleb-film">
+                              <div>
+                                <a (click)="ngOnClick(movie.url)"
+                                  >{{ movie.title }}
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-xs-12 col-sm-12" *ngIf="character">
+                        <div class="sb-it">
+                          <h6>Height:</h6>
+                          <p>{{ character.height }}</p>
+                        </div>
+                        <div class="sb-it">
+                          <h6>Weight:</h6>
+                          <p>{{ character.mass }}</p>
+                        </div>
+                        <div class="sb-it">
+                          <h6>Hair Color:</h6>
+                          <p>{{ character.hair_color }}</p>
+                        </div>
+
+                        <div class="sb-it">
+                          <h6>Skin Color:</h6>
+                          <p>{{ character.skin_color }}</p>
+                        </div>
+
+                        <div class="sb-it">
+                          <h6>Eye Color:</h6>
+                          <p>{{ character.eye_color }}</p>
+                        </div>
+
+                        <div class="sb-it">
+                          <h6>Birth year:</h6>
+                          <p>{{ character.birth_year }}</p>
+                        </div>
+
+                        <div class="sb-it">
+                          <h6>Gender:</h6>
+                          <p>{{ character.gender }}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

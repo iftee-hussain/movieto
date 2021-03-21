@@ -1,0 +1,30 @@
+<div class="buster-light">
+  <div class="hero common-hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="hero-ct">
+            <h1>Characters</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-single">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-4 col-6 celebrity-items">
+          <div class="row">
+            <div class="ceb-item" *ngFor="let character of characters">
+              <div class="ceb-infor">
+                <h2>
+                  <a (click)="ngOnClick(character.url)">{{ character.name }}</a>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
